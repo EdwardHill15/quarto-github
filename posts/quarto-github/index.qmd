@@ -1,7 +1,7 @@
 ---
 title: "Quarto with Github"
 author: "Edward F. Hillenaar"
-date: "`r Sys.time()`"
+date: "2024-03-20"
 categories: [news, code, analysis]
 image: "image.jpg"
 ---
