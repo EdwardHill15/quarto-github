@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "posts/quarto-github/index.html",
+    "href": "posts/quarto-github/index.html",
+    "title": "Quarto with Github",
+    "section": "",
+    "text": "Code\nscat_table1 %&gt;% \n  gt(rowname_col = \"Species\") %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  tab_stubhead(label = \"Species\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/quarto-github/index.html#a-great-table",
+    "href": "posts/quarto-github/index.html#a-great-table",
+    "title": "Quarto with Github",
+    "section": "",
+    "text": "Code\nscat_table1 %&gt;% \n  gt(rowname_col = \"Species\") %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  tab_stubhead(label = \"Species\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/quarto-github/index.html#a-stylized-version",
+    "href": "posts/quarto-github/index.html#a-stylized-version",
+    "title": "Quarto with Github",
+    "section": "A stylized version",
+    "text": "A stylized version\n\n\nCode\nscat_table1 %&gt;% \n  gt() %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  opt_stylize(style = 2, color = \"blue\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "quarto_github",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nQuarto with Github\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 17, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  }
+]
