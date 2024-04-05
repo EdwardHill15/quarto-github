@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "quarto_github",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nQuarto with Github\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 17, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Palmerpenquins tidymodels\n\n\n\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nQuarto with Github\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n  \n\n\n\n\nQuarto with Github\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMar 17, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/quarto-github/index.html",
@@ -44,6 +44,76 @@
   {
     "objectID": "posts/quarto-github/index.html#a-stylized-version",
     "href": "posts/quarto-github/index.html#a-stylized-version",
+    "title": "Quarto with Github",
+    "section": "A stylized version",
+    "text": "A stylized version\n\n\nCode\nscat_table1 %&gt;% \n  gt() %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  opt_stylize(style = 2, color = \"blue\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/penguins/index.html",
+    "href": "posts/penguins/index.html",
+    "title": "Palmerpenquins tidymodels",
+    "section": "",
+    "text": "This is a blogpost of Julia Silge about rstats tidymodels: Julia Silge’s youtube video."
+  },
+  {
+    "objectID": "posts/penguins/index.html#get-started-with-tidymodels-and-tidytuesday-palmer-penguins",
+    "href": "posts/penguins/index.html#get-started-with-tidymodels-and-tidytuesday-palmer-penguins",
+    "title": "Palmerpenquins tidymodels",
+    "section": "",
+    "text": "This is a blogpost of Julia Silge about rstats tidymodels: Julia Silge’s youtube video."
+  },
+  {
+    "objectID": "posts/penguins/index.html#palmerpenguins-dataset",
+    "href": "posts/penguins/index.html#palmerpenguins-dataset",
+    "title": "Palmerpenquins tidymodels",
+    "section": "2 Palmerpenguins dataset",
+    "text": "2 Palmerpenguins dataset\nThe Palmerpenguins dataset can be found here: Palmerpenguins dataset.\nWe can build a classification model to distinguish male and female penguins."
+  },
+  {
+    "objectID": "posts/penguins/index.html#explore-data",
+    "href": "posts/penguins/index.html#explore-data",
+    "title": "Palmerpenquins tidymodels",
+    "section": "3 Explore data",
+    "text": "3 Explore data\n\n\nCode\nglimpse(penguins)\n\n\nRows: 344\nColumns: 8\n$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…\n$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…\n\n\nCode\npenguins %&gt;% \n  filter(!is.na(sex)) %&gt;% \n  ggplot(aes(flipper_length_mm, bill_length_mm, color = sex, size = body_mass_g)) +\n  geom_point(alpha = 0.7) +\n  facet_wrap(~species)\n\n\n\n\n\n\n\nCode\npenguins_df &lt;- penguins %&gt;%\n  filter(!is.na(sex)) %&gt;%\n  select(-year, -island)"
+  },
+  {
+    "objectID": "posts/penguins/index.html#build-a-model",
+    "href": "posts/penguins/index.html#build-a-model",
+    "title": "Palmerpenquins tidymodels",
+    "section": "4 Build a model",
+    "text": "4 Build a model\n\n\nCode\nset.seed(123)\n\npenguin_split &lt;- initial_split(penguins_df, strata = sex)\npenguin_train &lt;- training(penguin_split)\npenguin_test &lt;- testing(penguin_split)\n\nlibrary(rsample)\n# Set seed for reproducibility\nset.seed(123)\n\n# Ungroup the data if it's grouped\npenguin_train &lt;- ungroup(penguin_train)\n\n# Number of bootstrap replicates\nnum_replicates &lt;- 250\n\n# Create an empty list to store bootstrap samples\npenguin_boot &lt;- vector(\"list\", num_replicates)\n\n# Perform bootstrap resampling\nfor (i in 1:num_replicates) {\n  # Generate random indices with replacement\n  indices &lt;- sample(nrow(penguin_train), replace = TRUE)\n  # Extract bootstrap sample using the random indices\n  penguin_boot[[i]] &lt;- penguin_train[indices, ]\n}\n\n# View the first bootstrap sample\npenguin_boot[[1]]\n\n\n# A tibble: 249 × 6\n   species   bill_length_mm bill_depth_mm flipper_length_mm body_mass_g sex   \n   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt; &lt;fct&gt; \n 1 Adelie              38.3          19.2               189        3950 male  \n 2 Gentoo              48.6          16                 230        5800 male  \n 3 Adelie              41.5          18.5               201        4000 male  \n 4 Adelie              37            16.9               185        3000 female\n 5 Gentoo              49.6          16                 225        5700 male  \n 6 Adelie              37.7          19.8               198        3500 male  \n 7 Adelie              32.1          15.5               188        3050 female\n 8 Chinstrap           42.5          17.3               187        3350 female\n 9 Adelie              38.8          17.6               191        3275 female\n10 Chinstrap           51.3          18.2               197        3750 male  \n# ℹ 239 more rows"
+  },
+  {
+    "objectID": "posts/penguins/index.html#setting-up-a-regression-model-to-train-the-data",
+    "href": "posts/penguins/index.html#setting-up-a-regression-model-to-train-the-data",
+    "title": "Palmerpenquins tidymodels",
+    "section": "5 Setting up a (regression) model to train the data",
+    "text": "5 Setting up a (regression) model to train the data\n\n\nCode\nglm_spec &lt;- logistic_reg() %&gt;%\n  set_engine(\"glm\")\n\nrf_spec &lt;- rand_forest() %&gt;%\n  set_mode(\"classification\") %&gt;%\n  set_engine(\"ranger\")\n\n\n\n\nCode\npenguin_wf &lt;- workflow() %&gt;%\n  add_formula(sex ~ .)\n\npenguin_wf\n\n\n══ Workflow ════════════════════════════════════════════════════════════════════\nPreprocessor: Formula\nModel: None\n\n── Preprocessor ────────────────────────────────────────────────────────────────\nsex ~ ."
+  },
+  {
+    "objectID": "posts/penguins/index.html#evaluate-modeling",
+    "href": "posts/penguins/index.html#evaluate-modeling",
+    "title": "Palmerpenquins tidymodels",
+    "section": "6 Evaluate modeling",
+    "text": "6 Evaluate modeling\n\n\nCode\ncollect_metrics(rf_rs)\n\n\n# A tibble: 3 × 6\n  .metric     .estimator   mean     n std_err .config             \n  &lt;chr&gt;       &lt;chr&gt;       &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 accuracy    binary     0.919     25 0.0164  Preprocessor1_Model1\n2 brier_class binary     0.0570    25 0.00624 Preprocessor1_Model1\n3 roc_auc     binary     0.977     25 0.00807 Preprocessor1_Model1\n\n\n\n\nCode\ncollect_metrics(glm_rs)\n\n\n# A tibble: 3 × 6\n  .metric     .estimator   mean     n std_err .config             \n  &lt;chr&gt;       &lt;chr&gt;       &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;               \n1 accuracy    binary     0.919     25 0.0174  Preprocessor1_Model1\n2 brier_class binary     0.0558    25 0.00910 Preprocessor1_Model1\n3 roc_auc     binary     0.981     25 0.00770 Preprocessor1_Model1\n\n\n\n\nCode\nglm_rs %&gt;%\n  conf_mat_resampled()\n\n\n# A tibble: 4 × 3\n  Prediction Truth   Freq\n  &lt;fct&gt;      &lt;fct&gt;  &lt;dbl&gt;\n1 female     female  4.52\n2 female     male    0.4 \n3 male       female  0.4 \n4 male       male    4.64\n\n\n\n\nCode\nglm_rs %&gt;%\n  collect_predictions() %&gt;%\n  group_by(id) %&gt;%\n  roc_curve(sex, .pred_female) %&gt;%\n  ggplot(aes(1 - specificity, sensitivity, color = id)) +\n  geom_abline(lty = 2, color = \"gray80\", size = 1.5) +\n  geom_path(show.legend = FALSE, alpha = 0.6, size = 1.2) +\n  coord_equal()\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\n\n\n\n\n\nCode\npenguin_final &lt;- penguin_wf %&gt;%\n  add_model(glm_spec) %&gt;%\n  last_fit(penguin_split)\n\npenguin_final\n\n\n# Resampling results\n# Manual resampling \n# A tibble: 1 × 6\n  splits           id               .metrics .notes   .predictions .workflow \n  &lt;list&gt;           &lt;chr&gt;            &lt;list&gt;   &lt;list&gt;   &lt;list&gt;       &lt;list&gt;    \n1 &lt;split [249/84]&gt; train/test split &lt;tibble&gt; &lt;tibble&gt; &lt;tibble&gt;     &lt;workflow&gt;\n\n\nCode\ncollect_metrics(penguin_final)\n\n\n# A tibble: 3 × 4\n  .metric     .estimator .estimate .config             \n  &lt;chr&gt;       &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               \n1 accuracy    binary         0.857 Preprocessor1_Model1\n2 roc_auc     binary         0.938 Preprocessor1_Model1\n3 brier_class binary         0.101 Preprocessor1_Model1\n\n\nCode\ncollect_predictions(penguin_final) %&gt;% conf_mat(sex, .pred_class)\n\n\n          Truth\nPrediction female male\n    female     37    7\n    male        5   35\n\n\n\n\nCode\npenguin_final$.workflow[[1]] %&gt;%\n  tidy(exponentiate = TRUE) %&gt;% arrange(estimate)\n\n\n# A tibble: 7 × 5\n  term              estimate std.error statistic     p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;       &lt;dbl&gt;\n1 (Intercept)       5.75e-46  19.6        -5.31  0.000000110\n2 speciesGentoo     1.14e- 5   3.75       -3.03  0.00243    \n3 speciesChinstrap  1.37e- 4   2.34       -3.79  0.000148   \n4 body_mass_g       1.01e+ 0   0.00176     4.59  0.00000442 \n5 flipper_length_mm 1.06e+ 0   0.0611      0.926 0.355      \n6 bill_length_mm    1.91e+ 0   0.180       3.60  0.000321   \n7 bill_depth_mm     8.36e+ 0   0.478       4.45  0.00000868 \n\n\n\n\nCode\npenguins %&gt;%\n  filter(!is.na(sex)) %&gt;%\n  ggplot(aes(bill_depth_mm, bill_length_mm, color = sex, size = body_mass_g)) +\n  geom_point(alpha = 0.7) +\n  facet_wrap(~species)"
+  },
+  {
+    "objectID": "posts/quarto-revealjs/index.html",
+    "href": "posts/quarto-revealjs/index.html",
+    "title": "Quarto with Github",
+    "section": "",
+    "text": "Code\nscat_table1 %&gt;% \n  gt(rowname_col = \"Species\") %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  tab_stubhead(label = \"Species\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/quarto-revealjs/index.html#a-great-table",
+    "href": "posts/quarto-revealjs/index.html#a-great-table",
+    "title": "Quarto with Github",
+    "section": "",
+    "text": "Code\nscat_table1 %&gt;% \n  gt(rowname_col = \"Species\") %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  tab_stubhead(label = \"Species\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/quarto-revealjs/index.html#a-stylized-version",
+    "href": "posts/quarto-revealjs/index.html#a-stylized-version",
     "title": "Quarto with Github",
     "section": "A stylized version",
     "text": "A stylized version\n\n\nCode\nscat_table1 %&gt;% \n  gt() %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  opt_stylize(style = 2, color = \"blue\")\n\n\n\n\n\n\n  \n    \n      California poopies\n    \n    \n      Morphometric data on scat\n    \n    \n      Species\n      \n        Physical averages\n      \n      d13C\n      d15N\n      Count\n    \n    \n      Length\n      Diameter\n      Mass\n    \n  \n  \n    bobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n    coyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n    gray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n  \n  \n    \n      Source: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
