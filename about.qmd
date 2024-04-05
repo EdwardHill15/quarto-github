@@ -1,5 +1,5 @@
 ---
-title: "Edward F. Hillenaar, MSc., BA-PE"
+title: "About"
 image: ed.jpg
 about:
   template: jolla
@@ -14,5 +14,7 @@ about:
       text: Github
       href: https://github.com
 ---
+
+Edward F. Hillenaar, MSc., BA-PE
 
 Psychologist \| Philosopher \| Data Scientist
