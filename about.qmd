@@ -15,4 +15,6 @@ about:
       href: https://github.com
 ---
 
-About this blog
+Edward F. Hillenaar, MSc., BA-PE
+
+Psychologist \| Philosopher \| Data Scientist
