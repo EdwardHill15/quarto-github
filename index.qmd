@@ -1,5 +1,5 @@
 ---
-title: "quarto_github"
+title: "Edward Hillenaar's Quarto Blog"
 listing:
   contents: posts
   sort: "date desc"
