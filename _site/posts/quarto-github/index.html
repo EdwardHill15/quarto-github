@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -71,17 +71,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -90,6 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -103,10 +110,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">quarto_github</span>
     </a>
@@ -118,23 +125,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.facebook.com/EdwardHillenaar?locale=nl_NL"> <i class="bi bi-facebook" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -188,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="a-great-table" class="level2">
 <h2 class="anchored" data-anchor-id="a-great-table">A great table</h2>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>scat_table1 <span class="sc">%&gt;%</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>(<span class="at">rowname_col =</span> <span class="st">"Species"</span>) <span class="sc">%&gt;%</span> </span>
@@ -201,7 +213,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_stubhead</span>(<span class="at">label =</span> <span class="st">"Species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-
+<div>
 <div id="cgffucgpui" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#cgffucgpui table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -642,59 +654,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_heading">
-      <td colspan="7" class="gt_heading gt_title gt_font_normal" style="">California poopies</td>
-    </tr>
-    <tr class="gt_heading">
-      <td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="">Morphometric data on scat</td>
-    </tr>
-    <tr class="gt_col_headings gt_spanner_row">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id="Species">Species</th>
-      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="Physical averages">
-        <span class="gt_column_spanner">Physical averages</span>
-      </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="d13C">d13C</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="d15N">d15N</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="Count">Count</th>
-    </tr>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Length">Length</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Diameter">Diameter</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Mass">Mass</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub">bobcat</th>
-<td headers="stub_1_1 Length" class="gt_row gt_right">9.3</td>
-<td headers="stub_1_1 Diameter" class="gt_row gt_right">19.0</td>
-<td headers="stub_1_1 Mass" class="gt_row gt_right">12.5</td>
-<td headers="stub_1_1 d13C" class="gt_row gt_right">-27.7</td>
-<td headers="stub_1_1 d15N" class="gt_row gt_right">6.4</td>
-<td headers="stub_1_1 count" class="gt_row gt_right">57</td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub">coyote</th>
-<td headers="stub_1_2 Length" class="gt_row gt_right">9.6</td>
-<td headers="stub_1_2 Diameter" class="gt_row gt_right">20.3</td>
-<td headers="stub_1_2 Mass" class="gt_row gt_right">18.2</td>
-<td headers="stub_1_2 d13C" class="gt_row gt_right">-24.8</td>
-<td headers="stub_1_2 d15N" class="gt_row gt_right">10.4</td>
-<td headers="stub_1_2 count" class="gt_row gt_right">28</td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub">gray_fox</th>
-<td headers="stub_1_3 Length" class="gt_row gt_right">9.0</td>
-<td headers="stub_1_3 Diameter" class="gt_row gt_right">15.0</td>
-<td headers="stub_1_3 Mass" class="gt_row gt_right">5.6</td>
-<td headers="stub_1_3 d13C" class="gt_row gt_right">-27.3</td>
-<td headers="stub_1_3 d15N" class="gt_row gt_right">6.5</td>
-<td headers="stub_1_3 count" class="gt_row gt_right">25</td></tr>
-  </tbody>
-  <tfoot class="gt_sourcenotes">
-    <tr>
-      <td class="gt_sourcenote" colspan="7"><strong>Source</strong>: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. <em>Wildlife Biology</em>, 21(5), 254-262</td>
-    </tr>
-  </tfoot>
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="7" class="gt_heading gt_title gt_font_normal">California poopies</th>
+</tr>
+<tr class="odd gt_heading">
+<th colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Morphometric data on scat</th>
+</tr>
+<tr class="header gt_col_headings gt_spanner_row">
+<th rowspan="2" id="Species" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Species</th>
+<th colspan="3" id="Physical averages" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Physical averages</span></th>
+<th rowspan="2" id="d13C" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">d13C</th>
+<th rowspan="2" id="d15N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">d15N</th>
+<th rowspan="2" id="Count" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Count</th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="Length" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Length</th>
+<th id="Diameter" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Diameter</th>
+<th id="Mass" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Mass</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">bobcat</td>
+<td class="gt_row gt_right" headers="stub_1_1 Length">9.3</td>
+<td class="gt_row gt_right" headers="stub_1_1 Diameter">19.0</td>
+<td class="gt_row gt_right" headers="stub_1_1 Mass">12.5</td>
+<td class="gt_row gt_right" headers="stub_1_1 d13C">-27.7</td>
+<td class="gt_row gt_right" headers="stub_1_1 d15N">6.4</td>
+<td class="gt_row gt_right" headers="stub_1_1 count">57</td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">coyote</td>
+<td class="gt_row gt_right" headers="stub_1_2 Length">9.6</td>
+<td class="gt_row gt_right" headers="stub_1_2 Diameter">20.3</td>
+<td class="gt_row gt_right" headers="stub_1_2 Mass">18.2</td>
+<td class="gt_row gt_right" headers="stub_1_2 d13C">-24.8</td>
+<td class="gt_row gt_right" headers="stub_1_2 d15N">10.4</td>
+<td class="gt_row gt_right" headers="stub_1_2 count">28</td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row">gray_fox</td>
+<td class="gt_row gt_right" headers="stub_1_3 Length">9.0</td>
+<td class="gt_row gt_right" headers="stub_1_3 Diameter">15.0</td>
+<td class="gt_row gt_right" headers="stub_1_3 Mass">5.6</td>
+<td class="gt_row gt_right" headers="stub_1_3 d13C">-27.3</td>
+<td class="gt_row gt_right" headers="stub_1_3 d15N">6.5</td>
+<td class="gt_row gt_right" headers="stub_1_3 count">25</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="odd">
+<td colspan="7" class="gt_sourcenote"><strong>Source</strong>: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. <em>Wildlife Biology</em>, 21(5), 254-262</td>
+</tr>
+</tfoot>
+
 </table>
+
+</div>
 </div>
 </div>
 </div>
@@ -702,7 +720,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="a-stylized-version" class="level2">
 <h2 class="anchored" data-anchor-id="a-stylized-version">A stylized version</h2>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scat_table1 <span class="sc">%&gt;%</span> </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span> </span>
@@ -715,7 +733,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">opt_stylize</span>(<span class="at">style =</span> <span class="dv">2</span>, <span class="at">color =</span> <span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-
+<div>
 <div id="pixpgypatv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#pixpgypatv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -1156,59 +1174,65 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_heading">
-      <td colspan="7" class="gt_heading gt_title gt_font_normal" style="">California poopies</td>
-    </tr>
-    <tr class="gt_heading">
-      <td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="">Morphometric data on scat</td>
-    </tr>
-    <tr class="gt_col_headings gt_spanner_row">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="2" colspan="1" scope="col" id="Species">Species</th>
-      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="3" scope="colgroup" id="Physical averages">
-        <span class="gt_column_spanner">Physical averages</span>
-      </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="d13C">d13C</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="d15N">d15N</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="2" colspan="1" scope="col" id="Count">Count</th>
-    </tr>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Length">Length</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Diameter">Diameter</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Mass">Mass</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="Species" class="gt_row gt_center">bobcat</td>
-<td headers="Length" class="gt_row gt_right">9.3</td>
-<td headers="Diameter" class="gt_row gt_right">19.0</td>
-<td headers="Mass" class="gt_row gt_right">12.5</td>
-<td headers="d13C" class="gt_row gt_right">-27.7</td>
-<td headers="d15N" class="gt_row gt_right">6.4</td>
-<td headers="count" class="gt_row gt_right">57</td></tr>
-    <tr><td headers="Species" class="gt_row gt_center gt_striped">coyote</td>
-<td headers="Length" class="gt_row gt_right gt_striped">9.6</td>
-<td headers="Diameter" class="gt_row gt_right gt_striped">20.3</td>
-<td headers="Mass" class="gt_row gt_right gt_striped">18.2</td>
-<td headers="d13C" class="gt_row gt_right gt_striped">-24.8</td>
-<td headers="d15N" class="gt_row gt_right gt_striped">10.4</td>
-<td headers="count" class="gt_row gt_right gt_striped">28</td></tr>
-    <tr><td headers="Species" class="gt_row gt_center">gray_fox</td>
-<td headers="Length" class="gt_row gt_right">9.0</td>
-<td headers="Diameter" class="gt_row gt_right">15.0</td>
-<td headers="Mass" class="gt_row gt_right">5.6</td>
-<td headers="d13C" class="gt_row gt_right">-27.3</td>
-<td headers="d15N" class="gt_row gt_right">6.5</td>
-<td headers="count" class="gt_row gt_right">25</td></tr>
-  </tbody>
-  <tfoot class="gt_sourcenotes">
-    <tr>
-      <td class="gt_sourcenote" colspan="7"><strong>Source</strong>: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. <em>Wildlife Biology</em>, 21(5), 254-262</td>
-    </tr>
-  </tfoot>
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="7" class="gt_heading gt_title gt_font_normal">California poopies</th>
+</tr>
+<tr class="odd gt_heading">
+<th colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Morphometric data on scat</th>
+</tr>
+<tr class="header gt_col_headings gt_spanner_row">
+<th rowspan="2" id="Species" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Species</th>
+<th colspan="3" id="Physical averages" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><span class="gt_column_spanner">Physical averages</span></th>
+<th rowspan="2" id="d13C" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">d13C</th>
+<th rowspan="2" id="d15N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">d15N</th>
+<th rowspan="2" id="Count" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Count</th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="Length" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Length</th>
+<th id="Diameter" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Diameter</th>
+<th id="Mass" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Mass</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="Species">bobcat</td>
+<td class="gt_row gt_right" headers="Length">9.3</td>
+<td class="gt_row gt_right" headers="Diameter">19.0</td>
+<td class="gt_row gt_right" headers="Mass">12.5</td>
+<td class="gt_row gt_right" headers="d13C">-27.7</td>
+<td class="gt_row gt_right" headers="d15N">6.4</td>
+<td class="gt_row gt_right" headers="count">57</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center gt_striped" headers="Species">coyote</td>
+<td class="gt_row gt_right gt_striped" headers="Length">9.6</td>
+<td class="gt_row gt_right gt_striped" headers="Diameter">20.3</td>
+<td class="gt_row gt_right gt_striped" headers="Mass">18.2</td>
+<td class="gt_row gt_right gt_striped" headers="d13C">-24.8</td>
+<td class="gt_row gt_right gt_striped" headers="d15N">10.4</td>
+<td class="gt_row gt_right gt_striped" headers="count">28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Species">gray_fox</td>
+<td class="gt_row gt_right" headers="Length">9.0</td>
+<td class="gt_row gt_right" headers="Diameter">15.0</td>
+<td class="gt_row gt_right" headers="Mass">5.6</td>
+<td class="gt_row gt_right" headers="d13C">-27.3</td>
+<td class="gt_row gt_right" headers="d15N">6.5</td>
+<td class="gt_row gt_right" headers="count">25</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="odd">
+<td colspan="7" class="gt_sourcenote"><strong>Source</strong>: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. <em>Wildlife Biology</em>, 21(5), 254-262</td>
+</tr>
+</tfoot>
+
 </table>
+
+</div>
 </div>
 </div>
 </div>
@@ -1216,14 +1240,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="grouped-data" class="level1">
 <h1>Grouped data</h1>
 <div class="cell">
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>scat_table2 <span class="sc">%&gt;%</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span> </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>(<span class="at">groupname_col =</span> <span class="st">"Species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-
+<div>
 <div id="xesocrnhqt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#xesocrnhqt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -1664,67 +1688,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Site">Site</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Length">Length</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Diameter">Diameter</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Mass">Mass</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="d13C">d13C</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="d15N">d15N</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Count">Count</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr class="gt_group_heading_row">
-      <th colspan="7" class="gt_group_heading" scope="colgroup" id="bobcat">bobcat</th>
-    </tr>
-    <tr class="gt_row_group_first"><td headers="bobcat  Site" class="gt_row gt_center">ANNU</td>
-<td headers="bobcat  Length" class="gt_row gt_right">9.3</td>
-<td headers="bobcat  Diameter" class="gt_row gt_right">19.0</td>
-<td headers="bobcat  Mass" class="gt_row gt_right">12.4</td>
-<td headers="bobcat  d13C" class="gt_row gt_right">-27.6</td>
-<td headers="bobcat  d15N" class="gt_row gt_right">6.2</td>
-<td headers="bobcat  Count" class="gt_row gt_right">48</td></tr>
-    <tr><td headers="bobcat  Site" class="gt_row gt_center">YOLA</td>
-<td headers="bobcat  Length" class="gt_row gt_right">9.3</td>
-<td headers="bobcat  Diameter" class="gt_row gt_right">18.9</td>
-<td headers="bobcat  Mass" class="gt_row gt_right">13.0</td>
-<td headers="bobcat  d13C" class="gt_row gt_right">-28.1</td>
-<td headers="bobcat  d15N" class="gt_row gt_right">7.5</td>
-<td headers="bobcat  Count" class="gt_row gt_right">9</td></tr>
-    <tr class="gt_group_heading_row">
-      <th colspan="7" class="gt_group_heading" scope="colgroup" id="coyote">coyote</th>
-    </tr>
-    <tr class="gt_row_group_first"><td headers="coyote  Site" class="gt_row gt_center">ANNU</td>
-<td headers="coyote  Length" class="gt_row gt_right">8.8</td>
-<td headers="coyote  Diameter" class="gt_row gt_right">20.2</td>
-<td headers="coyote  Mass" class="gt_row gt_right">18.7</td>
-<td headers="coyote  d13C" class="gt_row gt_right">-23.9</td>
-<td headers="coyote  d15N" class="gt_row gt_right">11.7</td>
-<td headers="coyote  Count" class="gt_row gt_right">19</td></tr>
-    <tr><td headers="coyote  Site" class="gt_row gt_center">YOLA</td>
-<td headers="coyote  Length" class="gt_row gt_right">11.2</td>
-<td headers="coyote  Diameter" class="gt_row gt_right">20.4</td>
-<td headers="coyote  Mass" class="gt_row gt_right">17.4</td>
-<td headers="coyote  d13C" class="gt_row gt_right">-26.7</td>
-<td headers="coyote  d15N" class="gt_row gt_right">7.7</td>
-<td headers="coyote  Count" class="gt_row gt_right">9</td></tr>
-    <tr class="gt_group_heading_row">
-      <th colspan="7" class="gt_group_heading" scope="colgroup" id="gray_fox">gray_fox</th>
-    </tr>
-    <tr class="gt_row_group_first"><td headers="gray_fox  Site" class="gt_row gt_center">ANNU</td>
-<td headers="gray_fox  Length" class="gt_row gt_right">9.0</td>
-<td headers="gray_fox  Diameter" class="gt_row gt_right">15.0</td>
-<td headers="gray_fox  Mass" class="gt_row gt_right">5.6</td>
-<td headers="gray_fox  d13C" class="gt_row gt_right">-27.3</td>
-<td headers="gray_fox  d15N" class="gt_row gt_right">6.5</td>
-<td headers="gray_fox  Count" class="gt_row gt_right">25</td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_col_headings">
+<th id="Site" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Site</th>
+<th id="Length" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Length</th>
+<th id="Diameter" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Diameter</th>
+<th id="Mass" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Mass</th>
+<th id="d13C" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">d13C</th>
+<th id="d15N" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">d15N</th>
+<th id="Count" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Count</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd gt_group_heading_row">
+<td colspan="7" id="bobcat" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">bobcat</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_center" headers="bobcat  Site">ANNU</td>
+<td class="gt_row gt_right" headers="bobcat  Length">9.3</td>
+<td class="gt_row gt_right" headers="bobcat  Diameter">19.0</td>
+<td class="gt_row gt_right" headers="bobcat  Mass">12.4</td>
+<td class="gt_row gt_right" headers="bobcat  d13C">-27.6</td>
+<td class="gt_row gt_right" headers="bobcat  d15N">6.2</td>
+<td class="gt_row gt_right" headers="bobcat  Count">48</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="bobcat  Site">YOLA</td>
+<td class="gt_row gt_right" headers="bobcat  Length">9.3</td>
+<td class="gt_row gt_right" headers="bobcat  Diameter">18.9</td>
+<td class="gt_row gt_right" headers="bobcat  Mass">13.0</td>
+<td class="gt_row gt_right" headers="bobcat  d13C">-28.1</td>
+<td class="gt_row gt_right" headers="bobcat  d15N">7.5</td>
+<td class="gt_row gt_right" headers="bobcat  Count">9</td>
+</tr>
+<tr class="even gt_group_heading_row">
+<td colspan="7" id="coyote" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">coyote</td>
+</tr>
+<tr class="odd gt_row_group_first">
+<td class="gt_row gt_center" headers="coyote  Site">ANNU</td>
+<td class="gt_row gt_right" headers="coyote  Length">8.8</td>
+<td class="gt_row gt_right" headers="coyote  Diameter">20.2</td>
+<td class="gt_row gt_right" headers="coyote  Mass">18.7</td>
+<td class="gt_row gt_right" headers="coyote  d13C">-23.9</td>
+<td class="gt_row gt_right" headers="coyote  d15N">11.7</td>
+<td class="gt_row gt_right" headers="coyote  Count">19</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="coyote  Site">YOLA</td>
+<td class="gt_row gt_right" headers="coyote  Length">11.2</td>
+<td class="gt_row gt_right" headers="coyote  Diameter">20.4</td>
+<td class="gt_row gt_right" headers="coyote  Mass">17.4</td>
+<td class="gt_row gt_right" headers="coyote  d13C">-26.7</td>
+<td class="gt_row gt_right" headers="coyote  d15N">7.7</td>
+<td class="gt_row gt_right" headers="coyote  Count">9</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="7" id="gray_fox" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">gray_fox</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_center" headers="gray_fox  Site">ANNU</td>
+<td class="gt_row gt_right" headers="gray_fox  Length">9.0</td>
+<td class="gt_row gt_right" headers="gray_fox  Diameter">15.0</td>
+<td class="gt_row gt_right" headers="gray_fox  Mass">5.6</td>
+<td class="gt_row gt_right" headers="gray_fox  d13C">-27.3</td>
+<td class="gt_row gt_right" headers="gray_fox  d15N">6.5</td>
+<td class="gt_row gt_right" headers="gray_fox  Count">25</td>
+</tr>
+</tbody>
 </table>
+
+</div>
 </div>
 </div>
 </div>
@@ -1812,10 +1847,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1825,8 +1877,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1838,7 +1899,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1882,6 +2066,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1907,6 +2092,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1967,6 +2178,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
