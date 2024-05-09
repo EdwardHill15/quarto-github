@@ -12,10 +12,13 @@ website:
         href: https://twitter.com/HillenaarE95352
       - icon: facebook
         href: https://www.facebook.com/EdwardHillenaar?locale=nl_NL
+      - icon: linkedin
+        href: https://linkedin.com
 format:
   html:
     theme: darkly
     css: styles.css
 
 editor: visual
+
 
