@@ -1,0 +1,17 @@
+{
+  "hash": "b0d7fdb3080d98488ce9ae3c13ce0b26",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Add stroke outlines to text in ggplot2\"\nauthor: \"Edward F. Hillenaar\"\ndate: \"2024-05-09\"\nnumber-sections: true\nformat: \n    html:\n      css: \"style.css\"\n      fig-width: 8\n      fig-height: 4\n      code-fold: true\neditor: visual\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\nlibrary(shadowtext)\n\nspecies_labels_tib <- tibble(\n  species = c('Adelie', 'Gentoo', 'Chinstrap'),\n  x = c(35,43,53),\n  y = c(210, 229,178)\n)\n\npalmerpenguins::penguins %>% \n  ggplot(\n    aes(bill_length_mm, flipper_length_mm, fill = species)\n  ) +\n  geom_point(shape = 21, size = 4) +\n  geom_shadowtext(\n    data = species_labels_tib,\n    aes(x,y, col = species, label = species),\n    size = 12,\n    fontface = 'bold',\n    famiy = 'Source Sans Pro',\n    bg.color = 'black'\n  ) +\n  theme_minimal(base_size = 16, base_family = 'Source Sans Pro') +\n  theme(legend.position = 'none')\n```\n\n::: {.cell-output-display}\n![](index._files/figure-html/setup-1.png){width=768}\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins_count <- palmerpenguins::penguins %>% \n  count(species)\nbg_colors <- ifelse(\n  penguins_count$species == 'Gentoo','blue',\n  ifelse(\n  penguins_count$species == 'Chinstrap', 'green',\n  'red'))\n  \nplot_1 <- penguins_count %>% \n  ggplot(\n    aes(x = n, y = species, fill = species)\n  ) +\n  geom_col() +\n  geom_shadowtext(\n    aes(x = -1, color = species, label = species),\n    hjust = 1,\n    size = 8,\n    family = 'Source Sans Pro',\n    fontface = 'bold',\n    bg.color = 'black'\n  ) +\n  theme_minimal(base_size = 16, base_family = 'Source Sans Pro') +\n  theme(\n    legend.position = 'none',\n    axis.title.y = element_blank(),\n    axis.line.y = element_blank(),\n    axis.text.y = element_blank(),\n    axis.ticks.length.y = unit(0, 'mm'),\n    panel.grid.major.y = element_blank()\n  ) +\n  labs(\n    title = 'Counts of penguin species',\n    x = element_blank(),\n  ) +\n  coord_cartesian(xlim = c(-40, 150))\nplot_1\n```\n\n::: {.cell-output-display}\n![](index._files/figure-html/unnamed-chunk-2-1.png){width=768}\n:::\n:::\n",
+    "supporting": [
+      "index._files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

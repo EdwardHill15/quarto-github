@@ -1,0 +1,86 @@
+---
+title: "Add stroke outlines to text in ggplot2"
+author: "Edward F. Hillenaar"
+date: "`r Sys.Date()`"
+number-sections: true
+format: 
+    html:
+      css: "style.css"
+      fig-width: 8
+      fig-height: 4
+      code-fold: true
+editor: visual
+---
+
+```{r}
+#| label: setup
+#| echo: true
+#| warning: false
+library(tidyverse)
+library(shadowtext)
+
+species_labels_tib <- tibble(
+  species = c('Adelie', 'Gentoo', 'Chinstrap'),
+  x = c(35,43,53),
+  y = c(210, 229,178)
+)
+
+palmerpenguins::penguins %>% 
+  ggplot(
+    aes(bill_length_mm, flipper_length_mm, fill = species)
+  ) +
+  geom_point(shape = 21, size = 4) +
+  geom_shadowtext(
+    data = species_labels_tib,
+    aes(x,y, col = species, label = species),
+    size = 12,
+    fontface = 'bold',
+    famiy = 'Source Sans Pro',
+    bg.color = 'black'
+  ) +
+  theme_minimal(base_size = 16, base_family = 'Source Sans Pro') +
+  theme(legend.position = 'none')
+
+```
+
+```{r}
+#| echo: true
+#| warning: false
+penguins_count <- palmerpenguins::penguins %>% 
+  count(species)
+bg_colors <- ifelse(
+  penguins_count$species == 'Gentoo','blue',
+  ifelse(
+  penguins_count$species == 'Chinstrap', 'green',
+  'red'))
+  
+plot_1 <- penguins_count %>% 
+  ggplot(
+    aes(x = n, y = species, fill = species)
+  ) +
+  geom_col() +
+  geom_shadowtext(
+    aes(x = -1, color = species, label = species),
+    hjust = 1,
+    size = 8,
+    family = 'Source Sans Pro',
+    fontface = 'bold',
+    bg.color = 'black'
+  ) +
+  theme_minimal(base_size = 16, base_family = 'Source Sans Pro') +
+  theme(
+    legend.position = 'none',
+    axis.title.y = element_blank(),
+    axis.line.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.length.y = unit(0, 'mm'),
+    panel.grid.major.y = element_blank()
+  ) +
+  labs(
+    title = 'Counts of penguin species',
+    x = element_blank(),
+  ) +
+  coord_cartesian(xlim = c(-40, 150))
+plot_1
+        
+```

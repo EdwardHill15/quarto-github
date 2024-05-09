@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Blog Posts",
     "section": "",
-    "text": "Palmerpenquins tidymodels\n\n\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto with Github\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 17, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Add stroke outlines to text in ggplot2\n\n\n\n\n\n\n\n\n\n\n\nInvalid Date\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n\n\n\n\n\n\nPalmerpenquins tidymodels\n\n\n\n\n\n\n\n\n\n\n\nApr 5, 2024\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto with Github\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 20, 2024\n\n\nEdward F. Hillenaar\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 17, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -96,5 +96,12 @@
     "title": "Quarto with Github",
     "section": "A stylized version",
     "text": "A stylized version\n\n\nCode\nscat_table1 %&gt;% \n  gt() %&gt;% \n  cols_label(count ~ \"Count\") %&gt;% \n  tab_header(title = \"California poopies\",\n             subtitle = \"Morphometric data on scat\") %&gt;% \n  tab_source_note(md(\"**Source**: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. *Wildlife Biology*, 21(5), 254-262\")) %&gt;% \n  tab_spanner(label = \"Physical averages\",\n              columns = Length:Mass) %&gt;% \n  opt_stylize(style = 2, color = \"blue\")\n\n\n\n\n\n\n\n\n\nCalifornia poopies\n\n\nMorphometric data on scat\n\n\nSpecies\nPhysical averages\nd13C\nd15N\nCount\n\n\nLength\nDiameter\nMass\n\n\n\n\nbobcat\n9.3\n19.0\n12.5\n-27.7\n6.4\n57\n\n\ncoyote\n9.6\n20.3\n18.2\n-24.8\n10.4\n28\n\n\ngray_fox\n9.0\n15.0\n5.6\n-27.3\n6.5\n25\n\n\n\nSource: Reid, R. E. B. (2015). A morphometric modeling approach to distinguishing among bobcat, coyote and gray fox scats. Wildlife Biology, 21(5), 254-262"
+  },
+  {
+    "objectID": "posts/09052024_blog/index..html",
+    "href": "posts/09052024_blog/index..html",
+    "title": "Add stroke outlines to text in ggplot2",
+    "section": "",
+    "text": "Code\nlibrary(tidyverse)\nlibrary(shadowtext)\n\nspecies_labels_tib &lt;- tibble(\n  species = c('Adelie', 'Gentoo', 'Chinstrap'),\n  x = c(35,43,53),\n  y = c(210, 229,178)\n)\n\npalmerpenguins::penguins %&gt;% \n  ggplot(\n    aes(bill_length_mm, flipper_length_mm, fill = species)\n  ) +\n  geom_point(shape = 21, size = 4) +\n  geom_shadowtext(\n    data = species_labels_tib,\n    aes(x,y, col = species, label = species),\n    size = 12,\n    fontface = 'bold',\n    famiy = 'Source Sans Pro',\n    bg.color = 'black'\n  ) +\n  theme_minimal(base_size = 16, base_family = 'Source Sans Pro') +\n  theme(legend.position = 'none')\n\n\n\n\n\n\n\n\n\n\n\nCode\npenguins_count &lt;- palmerpenguins::penguins %&gt;% \n  count(species)\nbg_colors &lt;- ifelse(\n  penguins_count$species == 'Gentoo','blue',\n  ifelse(\n  penguins_count$species == 'Chinstrap', 'green',\n  'red'))\n  \nplot_1 &lt;- penguins_count %&gt;% \n  ggplot(\n    aes(x = n, y = species, fill = species)\n  ) +\n  geom_col() +\n  geom_shadowtext(\n    aes(x = -1, color = species, label = species),\n    hjust = 1,\n    size = 8,\n    family = 'Source Sans Pro',\n    fontface = 'bold',\n    bg.color = 'black'\n  ) +\n  theme_minimal(base_size = 16, base_family = 'Source Sans Pro') +\n  theme(\n    legend.position = 'none',\n    axis.title.y = element_blank(),\n    axis.line.y = element_blank(),\n    axis.text.y = element_blank(),\n    axis.ticks.length.y = unit(0, 'mm'),\n    panel.grid.major.y = element_blank()\n  ) +\n  labs(\n    title = 'Counts of penguin species',\n    x = element_blank(),\n  ) +\n  coord_cartesian(xlim = c(-40, 150))\nplot_1"
   }
 ]
