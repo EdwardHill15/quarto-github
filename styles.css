@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Outfit';
-  color: Darkblue;
+  color: white;
   background: linear-gradient(270deg,lightblue, darkblue);
 }
 
@@ -83,6 +83,10 @@ body {
   background-color: #3D0C02;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.contact-left-title h2 {
+    color: #86c5da ;
 }
 
 
