@@ -1,9 +1,11 @@
 ---
 title: "R-shinylive-demo"
+author: "Edward F. Hillenaar"
+date: "2024-05-15"
 format: 
   html: 
     grid: 
-      body-width: 1800px
+      body-width: 1400px
     code-fold: true
     resources: 
       - shinylive-sw.js
@@ -19,6 +21,7 @@ image: "image.jpg"
 ```{shinylive-r}
 #| standalone: true
 #| viewerHeight: 600
+#| viewerWidth: 1400
 library(shiny)
 library(bslib)
 
