@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/quarto-shiny/index.html",
       "/posts/09052024_blog/index..html",
       "/posts/penguins/index.html",
       "/posts/post-with-code/index.html",
